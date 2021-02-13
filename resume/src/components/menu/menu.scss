@@ -1,0 +1,50 @@
+@import '../../styles/mixins.scss';
+@import '../../styles/variables.scss';
+
+.menu {
+  @include container(row, center, center);
+  width: 60%;
+}
+
+.menu-list {
+  width: 100%;
+  margin: 0 auto;
+  @include container(row, center, space-evenly);
+}
+
+.active {
+  color: $mainOrange;
+  transition: 0.3s;
+}
+
+.list_item {
+  list-style-type: none;
+  font-size: 1.5vw;
+  text-transform: uppercase;
+}
+
+.language {
+  background-color: $mainOrange;
+  padding-top: 2px;
+  opacity: 0.7;
+  outline: none;
+  border: none;
+  width: 40px;
+  height: 40px;
+  font-size: 18px;
+  text-transform: uppercase;
+  font-weight: 700;
+  border-radius: 50%; 
+  cursor: pointer;
+  &:hover {
+    transition: 0.4s;
+    opacity: 1;
+  }
+}
+
+.link {
+  &:hover {
+    transition: 0.6s;
+    color: $mainOrange;
+  }
+}

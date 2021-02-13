@@ -1,0 +1,24 @@
+@import '../../styles/mixins.scss';
+@import '../../styles/variables.scss';
+
+.contacts {
+  @include container(row, center, space-evenly);
+  width: 100%;
+  padding: 0 20%;
+  color: $mainOrange;
+  font-size: 18px;
+}
+
+.icon {
+  width: 60px;
+  height: auto;
+  opacity: 0.7;
+  &:hover {
+    transition: 0.5s;
+    opacity: 1;
+  }
+}
+
+.linkedin {
+  margin-right: 30px;
+}

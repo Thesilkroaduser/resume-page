@@ -1,0 +1,27 @@
+@import '../../styles/mixins.scss';
+@import '../../styles/variables.scss';
+
+.experience {
+  @include container(column, center, space-evenly);
+  width: 100%;
+  padding: 8% 20%;
+  background-color: $bgLight;
+  height: 100vh;
+}
+
+.experience_item {
+  width: 80%;
+  padding-left: 10px;
+  border-left: solid 4px black;
+}
+
+.item1 {
+  margin-bottom: 80px;
+}
+
+.subcontent {
+  font-size: 1.3vw;
+  margin-bottom: 10px;
+  text-align: justify;
+  padding-left: 30px;
+}

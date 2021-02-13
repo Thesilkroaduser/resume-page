@@ -1,0 +1,29 @@
+@import '../../styles/mixins.scss';
+@import '../../styles/variables.scss';
+
+.skills {
+  @include container(column, center, space-evenly);
+  width: 100%;
+  padding: 10% 20%;
+  background-color: $bgDark;
+  height: 100vh;
+}
+
+.skills-row1 {
+  width: 80%;
+  @include container(row, center, space-between);
+}
+
+.skills-row2 {
+  width: 80%;
+  @include container(row, center, space-between);
+} 
+
+.skills__item {
+  text-transform: uppercase;
+  font-weight: 700;
+  font-size: 2.8vw;
+  padding: 5px;
+  background-color: $mainDarkSick;
+  border: solid 4px black;
+}

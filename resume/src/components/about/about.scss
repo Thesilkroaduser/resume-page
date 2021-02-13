@@ -1,0 +1,22 @@
+@import '../../styles/mixins.scss';
+@import '../../styles/variables.scss';
+
+.about {
+  @include container(column, center, space-evenly);
+  width: 100%;
+  padding: 8% 20%;
+  background-color: $bgDark;
+  height: 100vh;
+} 
+
+.description {
+  width: 80%;
+  border-left: solid 4px black;
+  padding-left: 10px;
+}
+
+.education {
+  width: 80%;
+  padding-left: 10px;
+  border-left: solid 4px black;
+}
